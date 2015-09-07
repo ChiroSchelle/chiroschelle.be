@@ -1,0 +1,57 @@
+.leaders {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+
+	li {
+		//text-align: center;
+
+		h3 {
+			margin: 0;
+			padding: 25px 0 15px;
+			font-size: 36px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			list-style-type: none;
+
+			@extend .clearfix;
+
+			li {
+				margin-right: 35px;
+				display: block;
+				float: left;
+				text-align: center;
+
+				img {
+					border-radius: 50%;
+				}
+
+				.details {
+					min-height: 117px;
+				}
+
+				.name {
+					margin: 0;
+					padding: 5px;
+					font-weight: bolder;
+					font-size: 18px;
+				}
+
+				.street {
+					margin: 0;
+					padding: 0;
+				}
+
+				.city {
+					margin: 0;
+					padding: 0 0 5px;
+				}
+			}
+		}
+	}
+}

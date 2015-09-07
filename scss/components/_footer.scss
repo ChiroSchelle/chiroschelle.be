@@ -1,0 +1,88 @@
+.site-footer {
+	margin: 45px 0 0 0;
+	padding: 35px 0;
+
+	width: 100%;
+	min-height: 20vh;
+
+	background-color: #1F1E1D;
+	background-image: url('img/afdelingskleuren.png');
+	background-repeat: repeat-x;
+
+	h3 {
+		margin: 5px 0 10px 0;
+		color: #FFF;
+
+		.border {
+			border-bottom: 3px solid #FFF;
+			line-height: 35px;
+		}
+	}
+
+	.footer-logo {
+		height: 400px;
+	}
+
+	.column {
+		float: left;
+		margin-right: 50px;
+
+		&.image {
+			margin-right: 20px;
+		}
+	}
+
+	.contact-wrapper {
+
+		color: #FFF;
+
+		.street {
+			display: block;
+		}
+
+		.city {
+			display: block;
+		}
+
+		.mail {
+			margin-top: 4px;
+			display: block;
+		}
+	}
+
+	.social {
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+
+		@extend .clearfix;
+
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			a {
+				display: block;
+				text-indent: -9999px;
+				width: 35px;
+				height: 35px;
+
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+				&.facebook {
+					background-image: url('img/social-icons/fb.svg');
+				}
+
+				&.twitter {
+					background-image: url('img/social-icons/twitter.svg');
+				}
+
+				&.youtube {
+					background-image: url('img/social-icons/youtube.svg');
+				}
+			}
+		}
+	}
+}
