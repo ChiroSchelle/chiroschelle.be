@@ -17,6 +17,11 @@ body {
 	background-color: #F4F4F4;
 }
 
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
 .main-container {
 	margin: -100px 2% 25px;
 	padding: 0;
@@ -37,6 +42,12 @@ body {
 
 .page-template-info {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+}
+
+.blog .post .entry-content {
+	img {
+		display: none;
+	}
 }
 
 @media (min-width : 800px) {
