@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package gidsen-sint-jan
+ * @package chiro-schelle-15
  */
 
 get_header(); ?>

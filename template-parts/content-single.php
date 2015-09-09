@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package gidsen-sint-jan
+ * @package chiro-schelle-15
  */
 
 ?>
@@ -15,8 +15,7 @@
 				the_post_thumbnail( $size, $attr );
 			}
 			else {
-				echo '<img src="" alt="placeholder" title="placeholder" class="placeholder" />';
-				//echo get_avatar( get_the_author_meta( 'ID' ), 'avatar');
+				echo chiroschelle_show_default_thumb();
 			}
 		?>
 	</div>
@@ -25,7 +24,7 @@
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 			<div class="entry-meta">
-				<?php gidsen_sint_jan_posted_on(); ?>
+				<?php chiro_schelle_posted_on(); ?>
 			</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->
 
@@ -40,8 +39,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php gidsen_sint_jan_entry_footer(); ?>
+			<?php chiro_schelle_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-## -->
-

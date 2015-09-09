@@ -1,16 +1,53 @@
 .leaders {
 	margin: 0;
-	padding: 0;
+	padding: 0 25px;
 
 	list-style-type: none;
 
-	li {
-		//text-align: center;
+	.group {
+		margin: 20px auto;
+		width: 50%;
 
 		h3 {
-			margin: 0;
-			padding: 25px 0 15px;
+			margin: 0 0 0 20%;
+			padding: 25px 25px 15px;
 			font-size: 36px;
+		}
+
+		&:nth-child(odd) {
+			ul {
+				li {
+					.avatar-wrapper {
+						float: left;
+						display: block;
+						width: 20%;
+
+						.avatar {
+							float: right;
+						}
+					}
+
+					.details {
+						float: left;
+					}
+				}
+			}
+		}
+
+		&:nth-child(even) {
+			ul {
+				li {
+					.avatar-wrapper {
+						float: right;
+						display: block;
+					}
+
+					.details {
+						margin-left: 20%;
+						float: left;
+					}
+				}
+			}
 		}
 
 		ul {
@@ -19,37 +56,34 @@
 
 			list-style-type: none;
 
-			@extend .clearfix;
-
 			li {
-				margin-right: 35px;
-				display: block;
-				float: left;
-				text-align: center;
+				padding: 15px 0;
 
-				img {
-					border-radius: 50%;
+				@extend .clearfix;
+
+				.avatar-wrapper {
+					display: block;
+					width: 20%;
+
+					.avatar {
+						max-width: 100%;
+						height: auto;
+					}
 				}
 
 				.details {
-					min-height: 117px;
-				}
+					padding: 0 25px;
+					width: 60%;
 
-				.name {
-					margin: 0;
-					padding: 5px;
-					font-weight: bolder;
-					font-size: 18px;
-				}
+					.name {
+						font-size: 18px;
+						font-size: 1.8rem;
+						font-weight: 500;
+					}
 
-				.street {
-					margin: 0;
-					padding: 0;
-				}
-
-				.city {
-					margin: 0;
-					padding: 0 0 5px;
+					.street {
+						margin: 0;
+					}
 				}
 			}
 		}

@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package gidsen-sint-jan
+ * @package chiro-schelle-15
  */
 
 get_header(); ?>

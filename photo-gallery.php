@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package gidsen-sint-jan
+ * @package chiro-schelle-15
  * Template Name: Foto-album
  */
 

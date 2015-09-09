@@ -154,3 +154,196 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 add_image_size('avatar', 180, 180, 1);
+
+
+/**
+ * Standaardfiguurtje laten zien als er geen thumbnail is
+ */
+$aantal = 7;
+$i=rand(1,$aantal);
+$gebruikt = array();
+
+function chiroschelle_show_default_thumb($archive=0){
+	global $i;
+	global $gebruikt;
+	global $aantal;
+
+	array_push($gebruikt,$i);
+	$j = 0;
+	while (in_array($i, $gebruikt)) {
+   		$i = rand(1,$aantal);
+		$j = $j +1;
+
+		if ($j == 7){
+			break;
+			}
+		$i = rand(1,$aantal);
+	}
+
+		$imgpath = get_bloginfo('template_url') . "/img/thumbs/thumb_" .	$i .".jpg";
+
+	return "<img class=\"thumb\" src='$imgpath' />";
+}
+
+
+function mytheme_comment($comment, $args, $depth) {
+	$GLOBALS['comment'] = $comment;
+	extract($args, EXTR_SKIP);
+
+	if ( 'div' == $args['style'] ) {
+		$tag = 'div';
+		$add_below = 'comment';
+	} else {
+		$tag = 'li';
+		$add_below = 'div-comment';
+	}
+?>
+	<<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
+	<?php if ( 'div' != $args['style'] ) : ?>
+	<div id="div-comment-<?php comment_ID() ?>" class="comment-body row">
+	<?php endif; ?>
+
+	<div class="avatar col-md-2">
+		<?php echo get_avatar( $comment, 60); ?>
+	</div>
+
+	<div class="content col-md-10">
+
+		<div class="comment-author vcard">
+			<div class="author-name"><?php echo get_comment_author_link(); ?></div>
+			<div class="comment-meta commentmetadata">
+				op <?php echo get_comment_date() . ' ' . get_comment_time(); ?>
+			</div>
+		</div>
+
+		<div class="content-body">
+			<?php comment_text(); ?>
+		</div>
+
+		<div class="reply">
+			<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+		</div>
+
+	</div>
+
+
+
+	<?php if ( $comment->comment_approved == '0' ) : ?>
+		<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
+		<br />
+	<?php endif; ?>
+
+	<?php if ( 'div' != $args['style'] ) : ?>
+	</div>
+	<?php endif; ?>
+<?php
+}
+
+/*
+Geef user id terug
+*/
+
+function get_user_id($meta_key, $meta_value){
+	global $wpdb;
+	$table_name = $wpdb->prefix . "usermeta";
+	$sql = "SELECT DISTINCT user_id as ID  FROM " . $table_name ." WHERE `meta_key` LIKE '". $meta_key ."' AND meta_value LIKE '". $meta_value . "';";
+	$result = $wpdb->get_results($sql);
+	$i = 0;
+	foreach ($result as $row){
+		$ids[$i] = $row->ID;
+		$i++;
+	}
+	return $ids;
+}
+
+function maaknummerafdeling($afdeling) {
+	switch ($afdeling) {
+	case 0:
+    	$afdeling = 'geen';
+	    break;
+	case 1:
+	   $afdeling = 'Ribbel Jongens';
+	    break;
+	case 2:
+    	$afdeling = 'Ribbel Meisjes';
+	    break;
+	case 3:
+		$afdeling = 'Speelclub Jongens';
+    	break;
+	case 4:
+		$afdeling = 'Speelclub Meisjes';
+    	break;
+	case 5:
+		$afdeling = 'Rakkers';
+    	break;
+	case 6:
+		$afdeling = 'Kwiks';
+    	break;
+	case 7:
+		$afdeling = 'Toppers';
+    	break;
+	case 8:
+		$afdeling = 'Tippers';
+    	break;
+	case 9:
+		$afdeling = 'Kerels';
+    	break;
+	case 10:
+		$afdeling = 'Tiptiens';
+    	break;
+	case 11:
+		$afdeling = 'Aspi Jongens';
+    	break;
+	case 12:
+		$afdeling = 'Aspi Meisjes';
+    	break;
+	case 13:
+		$afdeling = 'IEDEREEN';
+		break;
+	case 14:
+		$afdeling = 'Leiding';
+		break;
+	case 15:
+		$afdeling = 'Muziekkapel';
+		break;
+	case 16:
+	    $afdeling = 'Tikeas';
+	    break;
+	case 17:
+		$afdeling = "Activiteiten";
+		}
+		return $afdeling;
+}
+
+function sort_op_afdeling($user_id, $afdeling){
+	global  $wpdb;
+	$table_name = $wpdb->prefix . "usermeta";
+	$where = "WHERE meta_key LIKE 'afdeling' AND meta_value = $afdeling AND ( ";
+	$i = 0;
+	foreach ($user_id as $id){
+		if ($i>0){
+			$where .= " OR ";
+
+		}
+
+		$where .= "user_id = '$id'";
+		$i++;
+	}
+
+	$where .= ")";
+	$sql = "SELECT DISTINCT user_id as ID, meta_value as afdeling FROM $table_name $where ORDER BY afdeling;";
+
+
+
+	$result = $wpdb->get_results($sql);
+	$i = 0;
+
+	foreach ($result as $row){
+
+		$users[$i] =  $row->ID;
+
+		$i++;
+
+	}
+	return $users;
+}

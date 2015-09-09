@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package gidsen-sint-jan
+ * @package chiro_schelle
  */
 
 ?>
@@ -15,8 +15,7 @@
 				the_post_thumbnail( $size, $attr );
 			}
 			else {
-				echo '<img src="" alt="placeholder" title="placeholder" class="placeholder" />';
-				//echo get_avatar( get_the_author_meta( 'ID' ), 'avatar');
+				echo chiroschelle_show_default_thumb();
 			}
 		?>
 	</div>
@@ -26,7 +25,7 @@
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php gidsen_sint_jan_posted_on(); ?>
+					<?php chiro_schelle_posted_on(); ?>
 				</div>
 			<?php endif; ?>
 		</header>
@@ -34,22 +33,19 @@
 		<div class="entry-content">
 			<?php
 				/* translators: %s: Name of current post */
-				the_content( sprintf(
-					wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'gidsen-sint-jan' ), array( 'span' => array( 'class' => array() ) ) ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				) );
+				the_content( '<p>Lees meer &raquo;</p>' );
 			?>
 
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'gidsen-sint-jan' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'chiro_schelle' ),
 					'after'  => '</div>',
 				) );
 			?>
 		</div>
 
 		<footer class="entry-footer">
-			<?php gidsen_sint_jan_entry_footer(); ?>
+			<?php chiro_schelle_entry_footer(); ?>
 		</footer>
 	</div>
 </article>

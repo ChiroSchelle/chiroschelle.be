@@ -26,9 +26,13 @@ body {
 	padding: 15px 50px;
 }
 
+.type-page {
+	padding: 0 25px;
+}
+
 @media (min-width : 800px) {
 	.main-container {
-		margin: -250px auto 25px;
+		margin: -250px auto 75px;
 		padding: 0 0 50px 0;
 	}
 }

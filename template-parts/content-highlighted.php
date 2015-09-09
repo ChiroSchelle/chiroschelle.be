@@ -2,15 +2,15 @@
 /**
  * Template part for displaying posts.
  *
- * @package gidsen-sint-jan
+ * @package chiro-schelle-15
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+
 	<div class="entry-thumb">
-		<?php the_post_thumbnail( $size, $attr ); ?> 
+		<?php the_post_thumbnail( $size, $attr ); ?>
 	</div>
 	<div class="entry-wrapper">
 		<header class="entry-header">
@@ -18,7 +18,7 @@
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php gidsen_sint_jan_posted_on(); ?>
+					<?php chiro_schelle_posted_on(); ?>
 				</div>
 			<?php endif; ?>
 		</header>
@@ -41,7 +41,7 @@
 		</div>
 
 		<footer class="entry-footer">
-			<?php gidsen_sint_jan_entry_footer(); ?>
+			<?php chiro_schelle_entry_footer(); ?>
 		</footer>
 	</div>
 </article>

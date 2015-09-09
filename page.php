@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package gidsen-sint-jan
+ * @package chiro-schelle-15
  */
 
 get_header(); ?>
@@ -32,7 +32,7 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</div>
-			
+
 	</section>
 
 <?php get_footer(); ?>

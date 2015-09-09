@@ -48,7 +48,7 @@
 
 		<div class="container">
 			<div class="site-branding">
-				<img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/chirologo[wit].png" alt="logo" title="logo" />
+				<a href="<?php bloginfo("url") ?>" id="homelink"><img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/chirologo[wit].png" alt="logo" title="logo" /></a>
 				<!-- <div class="site-info-wrapper">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
