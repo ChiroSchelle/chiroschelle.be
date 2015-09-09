@@ -88,8 +88,13 @@ body {
   padding: 0 25px;
 }
 
+/* line 38, scss/components/_main.scss */
+.page-template-info {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+}
+
 @media (min-width: 800px) {
-  /* line 39, scss/components/_main.scss */
+  /* line 43, scss/components/_main.scss */
   .main-container {
     margin: -250px auto 75px;
     padding: 0 0 50px 0;
@@ -382,78 +387,83 @@ body {
 }
 
 /* line 1, scss/components/_leaders.scss */
+.page-template-leaders {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+}
+
+/* line 5, scss/components/_leaders.scss */
 .leaders {
   margin: 0;
   padding: 0 25px;
   list-style-type: none;
 }
-/* line 7, scss/components/_leaders.scss */
+/* line 11, scss/components/_leaders.scss */
 .leaders .group {
   margin: 20px auto;
   width: 50%;
 }
-/* line 11, scss/components/_leaders.scss */
+/* line 15, scss/components/_leaders.scss */
 .leaders .group h3 {
   margin: 0 0 0 20%;
   padding: 25px 25px 15px;
   font-size: 36px;
 }
-/* line 20, scss/components/_leaders.scss */
+/* line 24, scss/components/_leaders.scss */
 .leaders .group:nth-child(odd) ul li .avatar-wrapper {
   float: left;
   display: block;
   width: 20%;
 }
-/* line 25, scss/components/_leaders.scss */
+/* line 29, scss/components/_leaders.scss */
 .leaders .group:nth-child(odd) ul li .avatar-wrapper .avatar {
   float: right;
 }
-/* line 30, scss/components/_leaders.scss */
+/* line 34, scss/components/_leaders.scss */
 .leaders .group:nth-child(odd) ul li .details {
   float: left;
 }
-/* line 40, scss/components/_leaders.scss */
+/* line 44, scss/components/_leaders.scss */
 .leaders .group:nth-child(even) ul li .avatar-wrapper {
   float: right;
   display: block;
 }
-/* line 45, scss/components/_leaders.scss */
+/* line 49, scss/components/_leaders.scss */
 .leaders .group:nth-child(even) ul li .details {
   margin-left: 20%;
   float: left;
 }
-/* line 53, scss/components/_leaders.scss */
+/* line 57, scss/components/_leaders.scss */
 .leaders .group ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 59, scss/components/_leaders.scss */
+/* line 63, scss/components/_leaders.scss */
 .leaders .group ul li {
   padding: 15px 0;
 }
-/* line 64, scss/components/_leaders.scss */
+/* line 68, scss/components/_leaders.scss */
 .leaders .group ul li .avatar-wrapper {
   display: block;
   width: 20%;
 }
-/* line 68, scss/components/_leaders.scss */
+/* line 72, scss/components/_leaders.scss */
 .leaders .group ul li .avatar-wrapper .avatar {
   max-width: 100%;
   height: auto;
 }
-/* line 74, scss/components/_leaders.scss */
+/* line 78, scss/components/_leaders.scss */
 .leaders .group ul li .details {
   padding: 0 25px;
   width: 60%;
 }
-/* line 78, scss/components/_leaders.scss */
+/* line 82, scss/components/_leaders.scss */
 .leaders .group ul li .details .name {
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 500;
 }
-/* line 84, scss/components/_leaders.scss */
+/* line 88, scss/components/_leaders.scss */
 .leaders .group ul li .details .street {
   margin: 0;
 }
@@ -921,4 +931,14 @@ body:after {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+/* line 1, scss/components/_rental.scss */
+.page-template-rental {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+}
+
+/* line 1, scss/components/_program.scss */
+.page-template-program {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/program-bg.jpg");
 }

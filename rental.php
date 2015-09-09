@@ -8,16 +8,10 @@
  * different template.
  *
  * @package chiro-schelle-15
- * Template Name: info
+ * Template Name: Verhuur
  */
 
 get_header(); ?>
-
-	<section class="highlighted info-menu">
-		<section class="container">
-			<?php wp_nav_menu( array( 'theme_location' => 'info', 'menu_id' => 'info-menu' ) ); ?>
-		</section>
-	</section>
 
 	<section class="container padding">
 

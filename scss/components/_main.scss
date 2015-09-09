@@ -35,6 +35,10 @@ body {
 	padding: 0 25px;
 }
 
+.page-template-info {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+}
+
 @media (min-width : 800px) {
 	.main-container {
 		margin: -250px auto 75px;
