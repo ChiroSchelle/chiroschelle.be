@@ -55,10 +55,6 @@ html {
 /* line 5, scss/components/_main.scss */
 body {
   font-family: Roboto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 22px;
@@ -66,46 +62,45 @@ body {
   background-color: #F4F4F4;
 }
 
-/* line 20, scss/components/_main.scss */
+/* line 15, scss/components/_main.scss */
 img, video {
   max-width: 100%;
   height: auto;
 }
 
-/* line 25, scss/components/_main.scss */
+/* line 20, scss/components/_main.scss */
 .main-container {
-  margin: -100px 2% 25px;
   padding: 0;
 }
 
-/* line 30, scss/components/_main.scss */
+/* line 25, scss/components/_main.scss */
 .card {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   background-color: #FFF;
 }
 
-/* line 35, scss/components/_main.scss */
+/* line 30, scss/components/_main.scss */
 .padding {
-  padding: 15px 50px;
+  padding: 15px;
 }
 
-/* line 39, scss/components/_main.scss */
+/* line 34, scss/components/_main.scss */
 .type-page {
   padding: 0 25px;
 }
 
-/* line 43, scss/components/_main.scss */
-.page-template-info {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
-}
-
-/* line 48, scss/components/_main.scss */
+/* line 39, scss/components/_main.scss */
 .blog .post .entry-content img {
   display: none;
 }
 
 @media (min-width: 800px) {
-  /* line 54, scss/components/_main.scss */
+  /* line 46, scss/components/_main.scss */
+  .padding {
+    padding: 15px 50px;
+  }
+
+  /* line 50, scss/components/_main.scss */
   .main-container {
     margin: -250px auto 75px;
     padding: 0 0 50px 0;
@@ -121,22 +116,22 @@ img, video {
   margin: 0;
   padding: 0 0 0 0;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
 }
-/* line 18, scss/components/_header.scss */
+/* line 14, scss/components/_header.scss */
 .site-header .site-branding .site-logo {
   margin: 0 auto;
-  padding: 5vh 0 0 0;
+  padding: 15vh 0 0 0;
   display: block;
-  max-width: 80%;
+  max-width: 90%;
 }
-/* line 26, scss/components/_header.scss */
+/* line 22, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper {
   float: left;
   margin-left: 10px;
   display: none;
 }
-/* line 31, scss/components/_header.scss */
+/* line 27, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-title {
   margin: 0;
   padding: 30px 0 0 0;
@@ -145,16 +140,16 @@ img, video {
   font-size: 58px;
   font-size: 5.8rem;
 }
-/* line 40, scss/components/_header.scss */
+/* line 36, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-title a {
   color: #FFF;
 }
-/* line 43, scss/components/_header.scss */
+/* line 39, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-title a:hover {
   text-decoration: none;
   color: #FFF;
 }
-/* line 50, scss/components/_header.scss */
+/* line 46, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-description {
   margin: 0;
   padding: 0;
@@ -167,12 +162,13 @@ img, video {
 }
 
 @media (min-width: 800px) {
-  /* line 69, scss/components/_header.scss */
+  /* line 65, scss/components/_header.scss */
   .site-header {
     height: 70vh;
     padding: 25vh 0 0 0;
+    background-image: none;
   }
-  /* line 73, scss/components/_header.scss */
+  /* line 71, scss/components/_header.scss */
   .site-header .site-branding .site-logo {
     margin: 0;
     padding: 0;
@@ -180,7 +176,7 @@ img, video {
     float: left;
     max-height: 14vh;
   }
-  /* line 82, scss/components/_header.scss */
+  /* line 80, scss/components/_header.scss */
   .site-header .site-branding .site-info-wrapper {
     display: block;
   }
@@ -310,7 +306,6 @@ img, video {
 }
 /* line 1, scss/components/_footer.scss */
 .site-footer {
-  margin: 45px 0 0 0;
   padding: 35px 0;
   width: 100%;
   min-height: 20vh;
@@ -318,58 +313,58 @@ img, video {
   background-image: url("img/afdelingskleuren.png");
   background-repeat: repeat-x;
 }
-/* line 12, scss/components/_footer.scss */
+/* line 11, scss/components/_footer.scss */
 .site-footer h3 {
   margin: 5px 0 10px 0;
   color: #FFF;
 }
-/* line 16, scss/components/_footer.scss */
+/* line 15, scss/components/_footer.scss */
 .site-footer h3 .border {
   border-bottom: 3px solid #FFF;
   line-height: 35px;
 }
-/* line 22, scss/components/_footer.scss */
+/* line 21, scss/components/_footer.scss */
 .site-footer .footer-logo {
   height: 400px;
 }
-/* line 26, scss/components/_footer.scss */
+/* line 25, scss/components/_footer.scss */
 .site-footer .column {
   float: left;
   margin-right: 50px;
 }
-/* line 30, scss/components/_footer.scss */
+/* line 29, scss/components/_footer.scss */
 .site-footer .column.image {
   margin-right: 20px;
 }
-/* line 35, scss/components/_footer.scss */
+/* line 34, scss/components/_footer.scss */
 .site-footer .contact-wrapper {
   color: #FFF;
 }
-/* line 39, scss/components/_footer.scss */
+/* line 38, scss/components/_footer.scss */
 .site-footer .contact-wrapper .street {
   display: block;
 }
-/* line 43, scss/components/_footer.scss */
+/* line 42, scss/components/_footer.scss */
 .site-footer .contact-wrapper .city {
   display: block;
 }
-/* line 47, scss/components/_footer.scss */
+/* line 46, scss/components/_footer.scss */
 .site-footer .contact-wrapper .mail {
   margin-top: 4px;
   display: block;
 }
-/* line 53, scss/components/_footer.scss */
+/* line 52, scss/components/_footer.scss */
 .site-footer .social {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 61, scss/components/_footer.scss */
+/* line 60, scss/components/_footer.scss */
 .site-footer .social li {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 64, scss/components/_footer.scss */
+/* line 63, scss/components/_footer.scss */
 .site-footer .social li a {
   display: block;
   text-indent: -9999px;
@@ -379,24 +374,24 @@ img, video {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 74, scss/components/_footer.scss */
+/* line 73, scss/components/_footer.scss */
 .site-footer .social li a.facebook {
   background-image: url("img/social-icons/fb.svg");
 }
-/* line 78, scss/components/_footer.scss */
+/* line 77, scss/components/_footer.scss */
 .site-footer .social li a.twitter {
   background-image: url("img/social-icons/twitter.svg");
 }
-/* line 82, scss/components/_footer.scss */
+/* line 81, scss/components/_footer.scss */
 .site-footer .social li a.youtube {
   background-image: url("img/social-icons/youtube.svg");
 }
-/* line 91, scss/components/_footer.scss */
+/* line 90, scss/components/_footer.scss */
 .site-footer .news-letter .mailchimp input[type="email"] {
   padding: 8px 15px;
   width: 100%;
 }
-/* line 96, scss/components/_footer.scss */
+/* line 95, scss/components/_footer.scss */
 .site-footer .news-letter .mailchimp .button {
   padding: 5px 15px;
   margin-top: 15px;
@@ -405,84 +400,85 @@ img, video {
   background-color: transparent;
 }
 
-/* line 1, scss/components/_leaders.scss */
-.page-template-leaders {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+@media (min-width: 800px) {
+  /* line 108, scss/components/_footer.scss */
+  .site-footer {
+    margin: 45px 0 0 0;
+  }
 }
-
-/* line 5, scss/components/_leaders.scss */
+/* line 1, scss/components/_leaders.scss */
 .leaders {
   margin: 0;
   padding: 0 25px;
   list-style-type: none;
 }
-/* line 11, scss/components/_leaders.scss */
+/* line 7, scss/components/_leaders.scss */
 .leaders .group {
   margin: 20px auto;
   width: 50%;
 }
-/* line 15, scss/components/_leaders.scss */
+/* line 11, scss/components/_leaders.scss */
 .leaders .group h3 {
   margin: 0 0 0 20%;
   padding: 25px 25px 15px;
   font-size: 36px;
 }
-/* line 24, scss/components/_leaders.scss */
+/* line 20, scss/components/_leaders.scss */
 .leaders .group:nth-child(odd) ul li .avatar-wrapper {
   float: left;
   display: block;
   width: 20%;
 }
-/* line 29, scss/components/_leaders.scss */
+/* line 25, scss/components/_leaders.scss */
 .leaders .group:nth-child(odd) ul li .avatar-wrapper .avatar {
   float: right;
 }
-/* line 34, scss/components/_leaders.scss */
+/* line 30, scss/components/_leaders.scss */
 .leaders .group:nth-child(odd) ul li .details {
   float: left;
 }
-/* line 44, scss/components/_leaders.scss */
+/* line 40, scss/components/_leaders.scss */
 .leaders .group:nth-child(even) ul li .avatar-wrapper {
   float: right;
   display: block;
 }
-/* line 49, scss/components/_leaders.scss */
+/* line 45, scss/components/_leaders.scss */
 .leaders .group:nth-child(even) ul li .details {
   margin-left: 20%;
   float: left;
 }
-/* line 57, scss/components/_leaders.scss */
+/* line 53, scss/components/_leaders.scss */
 .leaders .group ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 63, scss/components/_leaders.scss */
+/* line 59, scss/components/_leaders.scss */
 .leaders .group ul li {
   padding: 15px 0;
 }
-/* line 68, scss/components/_leaders.scss */
+/* line 64, scss/components/_leaders.scss */
 .leaders .group ul li .avatar-wrapper {
   display: block;
   width: 20%;
 }
-/* line 72, scss/components/_leaders.scss */
+/* line 68, scss/components/_leaders.scss */
 .leaders .group ul li .avatar-wrapper .avatar {
   max-width: 100%;
   height: auto;
 }
-/* line 78, scss/components/_leaders.scss */
+/* line 74, scss/components/_leaders.scss */
 .leaders .group ul li .details {
   padding: 0 25px;
   width: 60%;
 }
-/* line 82, scss/components/_leaders.scss */
+/* line 78, scss/components/_leaders.scss */
 .leaders .group ul li .details .name {
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 500;
 }
-/* line 88, scss/components/_leaders.scss */
+/* line 84, scss/components/_leaders.scss */
 .leaders .group ul li .details .street {
   margin: 0;
 }
@@ -953,24 +949,14 @@ body:after {
   opacity: 1;
 }
 
-/* line 1, scss/components/_rental.scss */
-.page-template-rental {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
-}
-
 /* line 1, scss/components/_program.scss */
-.page-template-program {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/program-bg.jpg");
-}
-
-/* line 5, scss/components/_program.scss */
 .activity {
   margin: 15px 10%;
   padding: 25px 0;
   border-bottom: 1px solid #DCDCDC;
   max-width: 500px;
 }
-/* line 11, scss/components/_program.scss */
+/* line 7, scss/components/_program.scss */
 .activity .date {
   font-weight: 500;
 }
@@ -1019,5 +1005,88 @@ body:after {
   .profile {
     margin: 100px 0;
     border-right: 1px solid #DCDCDC;
+  }
+}
+/**
+ * CHIRO SCHELLE BACKGROUNDS
+ *
+ * Elke "speciale" pagina heeft zijn eigen background. Op mobile devices wordt de image als header gebruikt,
+ * op grotere schermen gebruiken we de achtergrond over het hele scherm in de body.
+ */
+/* line 9, scss/components/_background.scss */
+.site-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 17, scss/components/_background.scss */
+.page-template-program .site-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/program-bg.jpg");
+}
+
+/* line 24, scss/components/_background.scss */
+.page-template-leaders .site-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+}
+
+/* line 31, scss/components/_background.scss */
+.page-template-rental .site-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+}
+
+/* line 38, scss/components/_background.scss */
+.page-template-info .site-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+}
+
+@media (min-width: 800px) {
+  /* line 46, scss/components/_background.scss */
+  .site-header {
+    background-image: none;
+  }
+
+  /* line 51, scss/components/_background.scss */
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* line 59, scss/components/_background.scss */
+  .page-template-program {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/program-bg.jpg");
+  }
+  /* line 62, scss/components/_background.scss */
+  .page-template-program .site-header {
+    background-image: none;
+  }
+
+  /* line 68, scss/components/_background.scss */
+  .page-template-leaders {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+  }
+  /* line 71, scss/components/_background.scss */
+  .page-template-leaders .site-header {
+    background-image: none;
+  }
+
+  /* line 77, scss/components/_background.scss */
+  .page-template-rental {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+  }
+  /* line 80, scss/components/_background.scss */
+  .page-template-rental .site-header {
+    background-image: none;
+  }
+
+  /* line 86, scss/components/_background.scss */
+  .page-template-info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+  }
+  /* line 89, scss/components/_background.scss */
+  .page-template-info .site-header {
+    background-image: none;
   }
 }

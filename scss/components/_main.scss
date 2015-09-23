@@ -5,11 +5,6 @@ html {
 body {
 	font-family: Roboto;
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-
 	font-size: 14px;
 	font-size: 1.4rem;
 	line-height: 22px;
@@ -23,7 +18,7 @@ img, video {
 }
 
 .main-container {
-	margin: -100px 2% 25px;
+	//margin: -100px 2% 25px;
 	padding: 0;
 }
 
@@ -33,15 +28,11 @@ img, video {
 }
 
 .padding {
-	padding: 15px 50px;
+	padding: 15px;
 }
 
 .type-page {
 	padding: 0 25px;
-}
-
-.page-template-info {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
 }
 
 .blog .post .entry-content {
@@ -51,6 +42,11 @@ img, video {
 }
 
 @media (min-width : 800px) {
+
+	.padding {
+		padding: 15px 50px;
+	}
+
 	.main-container {
 		margin: -250px auto 75px;
 		padding: 0 0 50px 0;

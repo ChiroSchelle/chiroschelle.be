@@ -1,0 +1,93 @@
+/**
+ * CHIRO SCHELLE BACKGROUNDS
+ *
+ * Elke "speciale" pagina heeft zijn eigen background. Op mobile devices wordt de image als header gebruikt,
+ * op grotere schermen gebruiken we de achtergrond over het hele scherm in de body.
+ */
+
+// DEFAULT
+.site-header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+// PROGRAM
+.page-template-program {
+	.site-header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/program-bg.jpg");
+	}
+}
+
+// LEADERS
+.page-template-leaders {
+	.site-header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+	}
+}
+
+// RENTAL
+.page-template-rental {
+	.site-header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+	}
+}
+
+// INFO
+.page-template-info {
+	.site-header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+	}
+}
+
+@media (min-width : 800px) {
+
+	// DEFAULT
+	.site-header {
+		background-image: none;
+	}
+
+	// DEFAULT
+	body {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	// PROGRAM
+	.page-template-program {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/program-bg.jpg");
+
+		.site-header {
+			background-image: none;
+		}
+	}
+
+	// LEADERS
+	.page-template-leaders {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+
+		.site-header {
+			background-image: none;
+		}
+	}
+
+	// RENTAL
+	.page-template-rental {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+
+		.site-header {
+			background-image: none;
+		}
+	}
+
+	// INFO
+	.page-template-info {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+
+		.site-header {
+			background-image: none;
+		}
+	}
+}
