@@ -46,7 +46,7 @@ function displayUser($user_id) {
 
 get_header(); ?>
 
-	<section class="container">
+	<section class="container highlighted">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -64,7 +64,8 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; // End of the loop. ?>
-
+	</section>
+	<section class="container">
 			<ul class="leaders">
 				<li class="group">
 					<h3>Groeps</h3>

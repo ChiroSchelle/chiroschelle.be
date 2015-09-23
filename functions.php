@@ -203,11 +203,11 @@ function mytheme_comment($comment, $args, $depth) {
 	<div id="div-comment-<?php comment_ID() ?>" class="comment-body row">
 	<?php endif; ?>
 
-	<div class="avatar col-md-2">
+	<div class="avatar col-xs-2">
 		<?php echo get_avatar( $comment, 60); ?>
 	</div>
 
-	<div class="content col-md-10">
+	<div class="content col-xs-10">
 
 		<div class="comment-author vcard">
 			<div class="author-name"><?php echo get_comment_author_link(); ?></div>
@@ -221,7 +221,7 @@ function mytheme_comment($comment, $args, $depth) {
 		</div>
 
 		<div class="reply">
-			<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+			<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => 2 ) ) ); ?>
 		</div>
 
 	</div>
