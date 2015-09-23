@@ -415,74 +415,90 @@ img, video {
 /* line 7, scss/components/_leaders.scss */
 .leaders .group {
   margin: 20px auto;
-  width: 50%;
+  width: 100%;
 }
 /* line 11, scss/components/_leaders.scss */
 .leaders .group h3 {
-  margin: 0 0 0 20%;
-  padding: 25px 25px 15px;
-  font-size: 36px;
+  margin: 0;
+  padding: 25px 0;
+  font-size: 32px;
+  font-size: 3.2rem;
 }
-/* line 20, scss/components/_leaders.scss */
-.leaders .group:nth-child(odd) ul li .avatar-wrapper {
-  float: left;
-  display: block;
-  width: 20%;
-}
-/* line 25, scss/components/_leaders.scss */
-.leaders .group:nth-child(odd) ul li .avatar-wrapper .avatar {
-  float: right;
-}
-/* line 30, scss/components/_leaders.scss */
-.leaders .group:nth-child(odd) ul li .details {
-  float: left;
-}
-/* line 40, scss/components/_leaders.scss */
-.leaders .group:nth-child(even) ul li .avatar-wrapper {
-  float: right;
-  display: block;
-}
-/* line 45, scss/components/_leaders.scss */
-.leaders .group:nth-child(even) ul li .details {
-  margin-left: 20%;
-  float: left;
-}
-/* line 53, scss/components/_leaders.scss */
+/* line 18, scss/components/_leaders.scss */
 .leaders .group ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 59, scss/components/_leaders.scss */
+/* line 24, scss/components/_leaders.scss */
 .leaders .group ul li {
   padding: 15px 0;
 }
-/* line 64, scss/components/_leaders.scss */
+/* line 29, scss/components/_leaders.scss */
 .leaders .group ul li .avatar-wrapper {
   display: block;
   width: 20%;
+  float: left;
 }
-/* line 68, scss/components/_leaders.scss */
+/* line 34, scss/components/_leaders.scss */
 .leaders .group ul li .avatar-wrapper .avatar {
   max-width: 100%;
   height: auto;
 }
-/* line 74, scss/components/_leaders.scss */
+/* line 40, scss/components/_leaders.scss */
 .leaders .group ul li .details {
-  padding: 0 25px;
-  width: 60%;
+  padding: 0 0 0 25px;
+  width: 80%;
+  float: left;
 }
-/* line 78, scss/components/_leaders.scss */
+/* line 45, scss/components/_leaders.scss */
 .leaders .group ul li .details .name {
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 500;
 }
-/* line 84, scss/components/_leaders.scss */
+/* line 51, scss/components/_leaders.scss */
 .leaders .group ul li .details .street {
   margin: 0;
 }
 
+@media (min-width: 800px) {
+  /* line 63, scss/components/_leaders.scss */
+  .leaders .group {
+    width: 50%;
+  }
+  /* line 66, scss/components/_leaders.scss */
+  .leaders .group h3 {
+    margin: 0 0 0 20%;
+    padding: 25px 25px 15px;
+    font-size: 36px;
+  }
+  /* line 75, scss/components/_leaders.scss */
+  .leaders .group:nth-child(odd) ul li .avatar-wrapper {
+    float: left;
+    display: block;
+    width: 20%;
+  }
+  /* line 80, scss/components/_leaders.scss */
+  .leaders .group:nth-child(odd) ul li .avatar-wrapper .avatar {
+    float: right;
+  }
+  /* line 85, scss/components/_leaders.scss */
+  .leaders .group:nth-child(odd) ul li .details {
+    float: left;
+  }
+  /* line 95, scss/components/_leaders.scss */
+  .leaders .group:nth-child(even) ul li .avatar-wrapper {
+    float: right;
+    display: block;
+  }
+  /* line 100, scss/components/_leaders.scss */
+  .leaders .group:nth-child(even) ul li .details {
+    margin-left: 20%;
+    width: 60%;
+    float: left;
+  }
+}
 /* line 1, scss/components/_article.scss */
 .post {
   padding: 25px 0 0 0;
