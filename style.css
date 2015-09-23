@@ -203,12 +203,11 @@ img, video {
 }
 /* line 18, scss/components/_nav.scss */
 .main-navigation ul li {
-  margin: 0;
-  padding: 25px 0;
+  margin: 0 5%;
   line-height: 60px;
   box-sizing: border-box;
   display: block;
-  width: 20%;
+  width: auto;
   text-align: center;
   float: left;
 }
@@ -300,6 +299,15 @@ img, video {
   padding-bottom: 3px;
 }
 
+@media (min-width: 680px) {
+  /* line 133, scss/components/_nav.scss */
+  .main-navigation ul li {
+    margin: 0;
+    padding: 25px;
+    width: 20%;
+    float: left;
+  }
+}
 /* line 1, scss/components/_footer.scss */
 .site-footer {
   margin: 45px 0 0 0;
@@ -969,14 +977,47 @@ body:after {
 
 /* line 1, scss/components/_author.scss */
 .profile {
-  padding-top: 45px;
+  margin: 45px 0;
+  text-align: center;
 }
-/* line 4, scss/components/_author.scss */
+/* line 5, scss/components/_author.scss */
+.profile .info-wrapper {
+  font-weight: 500;
+}
+/* line 9, scss/components/_author.scss */
 .profile .avatar {
   border-radius: 50%;
+  max-width: 90px;
+  display: block;
+  margin: 0 auto;
 }
 
-/* line 9, scss/components/_author.scss */
-.vragenlijst {
+/* line 17, scss/components/_author.scss */
+.vragenlijst-wrapper {
+  padding-top: 45px;
   padding-bottom: 45px;
+}
+/* line 21, scss/components/_author.scss */
+.vragenlijst-wrapper .vragenlijst {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 25, scss/components/_author.scss */
+.vragenlijst-wrapper .vragenlijst .vraag {
+  box-sizing: border-box;
+  padding: 5px 2% 5px 0;
+  width: 50%;
+  font-weight: 500;
+}
+/* line 32, scss/components/_author.scss */
+.vragenlijst-wrapper .vragenlijst .antwoord {
+  padding: 5px 0;
+}
+
+@media (min-width: 992px) {
+  /* line 40, scss/components/_author.scss */
+  .profile {
+    margin: 100px 0;
+    border-right: 1px solid #DCDCDC;
+  }
 }

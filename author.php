@@ -8,7 +8,6 @@
  */
 
 $authorDetails = get_userdata($author);
-var_dump($authorDetails);
 
 get_header(); ?>
 
@@ -16,14 +15,14 @@ get_header(); ?>
 		<section class="highlighted">
 			<div class="container padding">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="row profile">
+					<div class="col-md-4">
+						<div class="profile">
 
-							<div class="col-md-3">
+							<div class="avatar-wrapper">
 								<?php echo get_avatar($post->post_author, 160); ?>
 							</div>
 
-							<div class="col-md-9">
+							<div class="info-wrapper">
 								<h2><?php echo $authorDetails->display_name; ?></h2>
 								<div class="street">
 									<?php echo $authorDetails->straat . " ". $authorDetails->nr; ?>
@@ -43,10 +42,10 @@ get_header(); ?>
 
 						</div>
 					</div>
-					<div class="row vragenlijst">
-						<div class="col-md-9 col-md-offset-3">
+					<div class="col-md-7 col-md-offset-1 vragenlijst-wrapper">
+
 							<?php get_vragenlijst($authorDetails); ?>
-						</div>
+
 					</div>
 				</div>
 			</div>
