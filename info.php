@@ -14,8 +14,10 @@
 get_header(); ?>
 
 	<section class="highlighted info-menu">
-		<section class="container">
-			<?php wp_nav_menu( array( 'theme_location' => 'info', 'menu_id' => 'info-menu' ) ); ?>
+		<section class="container padding">
+			<div class="type-page">
+				<?php wp_nav_menu( array( 'theme_location' => 'info', 'menu_id' => 'info-menu' ) ); ?>
+			</div>
 		</section>
 	</section>
 

@@ -12,7 +12,7 @@
 	<div class="entry-thumb">
 		<?php
 			if(has_post_thumbnail()) {
-				the_post_thumbnail( $size, $attr );
+				the_post_thumbnail(array(150));
 			}
 			else {
 				echo chiroschelle_show_default_thumb();
@@ -21,7 +21,7 @@
 	</div>
 	<div class="entry-wrapper">
 		<header class="entry-header">
-			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">

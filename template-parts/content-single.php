@@ -12,7 +12,7 @@
 	<div class="entry-thumb">
 		<?php
 			if(has_post_thumbnail()) {
-				the_post_thumbnail( $size, $attr );
+				the_post_thumbnail(array(150,150));
 			}
 			else {
 				echo chiroschelle_show_default_thumb();
@@ -32,7 +32,7 @@
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'gidsen-sint-jan' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'chiro-schelle-15' ),
 					'after'  => '</div>',
 				) );
 			?>

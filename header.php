@@ -30,13 +30,23 @@
        	 	var marker = new google.maps.Marker({
 			    position: { lat: 51.1107746, lng: 4.3611509},
 			    map: map,
-			    title: 'Gidsen Sint-Jan'
+			    title: 'chiro-schelle-15'
 			});
       	}
 
       	google.maps.event.addDomListener(window, 'load', initialize);
    	</script>
 <?php } ; ?>
+
+<script>
+	$(document).ready(function() {
+
+		$("#toggle-menu").click(function() {
+			$("#primary-menu").slideToggle();
+		});
+	});
+</script>
+
 <?php wp_head(); ?>
 </head>
 
@@ -44,11 +54,11 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'chiro-schelle' ); ?></a>
 
-	<header class="site-header" role="banner">
+	<header class="site-header">
 
 		<div class="container">
 			<div class="site-branding">
-				<a href="<?php bloginfo("url") ?>" id="homelink"><img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/chirologo[wit].png" alt="logo" title="logo" /></a>
+				<a href="<?php bloginfo("url") ?>" id="homelink"><img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/chirologo-wit.png" alt="logo Chiro Schelle" title="logo Chiro Schelle" /></a>
 				<!-- <div class="site-info-wrapper">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
@@ -59,9 +69,9 @@
 	</header>
 
 	<div class="container card main-container">
-		<nav class="main-navigation" role="navigation">
+		<nav class="main-navigation">
 
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'chiro-schelle' ); ?></button>
+			<button class="menu-toggle" id="toggle-menu" aria-controls="primary-menu" aria-expanded="false"><i class="glyphicon glyphicon-chevron-down"></i> Menu</button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 		</nav>

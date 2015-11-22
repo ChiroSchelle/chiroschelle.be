@@ -1,5 +1,5 @@
 .comments-wrapper {
-	@extend .padding;
+	padding: 15px 50px;
 }
 
 .comment-list {
@@ -8,7 +8,7 @@
 	width: 100%;
 
 	.comment {
-		margin: 10px 0;
+		margin: 10px;
 		padding: 25px;
 
 		background-color: #F0F0F0;
@@ -26,6 +26,10 @@
 					float: right;
 				}
 			}
+
+			.content {
+
+			}
 		}
 
 		.comment-author {
@@ -39,7 +43,6 @@
 		}
 
 		.children {
-			padding: 0;
 			list-style-type: none;
 		}
 	}
@@ -55,8 +58,8 @@
 	input[type="text"] {
 		padding: 8px 15px;
 		margin: 10px 0;
-		width: 60%;
 		display: block;
+		width: 100%;
 	}
 
 	.submit {
@@ -68,10 +71,10 @@
 	}
 }
 
-@media (min-width : 800px) {
-
+@media (min-width: 768px) {
 	.comments-wrapper {
-		margin-left: 27%;
+		margin-left: 31%;
+		padding: 0;
 	}
 
 	.comment-list {
@@ -84,7 +87,7 @@
 		}
 
 		input[type="text"] {
-			width: 40%;
+			width: 60%;
 		}
 	}
 }

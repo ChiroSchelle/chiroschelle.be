@@ -1,6 +1,6 @@
 <?php
 /**
- * gidsen-sint-jan Theme Customizer
+ * chiro-schelle-15 Theme Customizer
  *
  * @package chiro-schelle-15
  */
