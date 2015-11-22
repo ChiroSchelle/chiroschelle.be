@@ -202,30 +202,31 @@ function mytheme_comment($comment, $args, $depth) {
 	<?php if ( 'div' != $args['style'] ) : ?>
 	<div id="div-comment-<?php comment_ID() ?>" class="comment-body row">
 	<?php endif; ?>
-
-	<div class="avatar col-xs-2">
-		<?php echo get_avatar( $comment, 60); ?>
-	</div>
-
-	<div class="content col-xs-10">
-
-		<div class="comment-author vcard">
+	
+	<div class="row">
+		<div class="avatar col-xs-2">
+			<?php echo get_avatar( $comment, 60); ?>
+		</div>
+		<div class="comment-author vcard col-xs-10">
 			<div class="author-name"><?php echo get_comment_author_link(); ?></div>
 			<div class="comment-meta commentmetadata">
 				op <?php echo get_comment_date() . ' ' . get_comment_time(); ?>
 			</div>
 		</div>
-
-		<div class="content-body">
-			<?php comment_text(); ?>
-		</div>
-
-		<div class="reply">
-			<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => 2 ) ) ); ?>
-		</div>
-
 	</div>
+	
+	<div class="row">
+		<div class="content col-xs-9 col-xs-offset-2 col-md-10">
+			<div class="content-body">
+				<?php comment_text(); ?>
+			</div>
 
+			<div class="reply">
+				<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => 2 ) ) ); ?>
+			</div>
+
+		</div>
+	</div>
 
 
 	<?php if ( $comment->comment_approved == '0' ) : ?>

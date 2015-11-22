@@ -5,7 +5,8 @@ html {
 body {
 	font-family: Roboto;
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+	//background-image: url("img/header2.jpg");
+	//background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -19,7 +20,7 @@ body {
 
 .main-container {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 30px;
 }
 
 .card {
@@ -28,11 +29,7 @@ body {
 }
 
 .padding {
-	padding: 15px 50px;
-}
-
-.page-template-info {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+	padding: 15px;
 }
 
 .blog .post .entry-content {
@@ -42,6 +39,15 @@ body {
 }
 
 @media (min-width : 800px) {
+	
+	.padding {
+		padding: 15 50px;
+	}
+
+
+	body {
+		background-image: url("img/header2.jpg");
+	}
 
 	.type-page {
 		padding: 0 25px;

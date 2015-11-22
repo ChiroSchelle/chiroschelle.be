@@ -1,5 +1,5 @@
 .site-footer {
-	margin: 45px 0 0 0;
+	margin: 0;
 	padding: 35px 0;
 
 	width: 100%;
@@ -102,5 +102,11 @@
 			}
 
 		}
+	}
+}
+
+@media (min-width : 800px) {
+	.site-footer {
+		margin: 45px 0 0 0;
 	}
 }
