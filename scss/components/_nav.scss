@@ -29,29 +29,72 @@
 			box-sizing: border-box;
 			padding: 0 2%;
 			display: block;
-			width: 33.33333332%;
+			width: 50%;
 			text-align: left;
 			float: left;
 
 			ul {
 				display: none;
 			}
+			
+			&:first-child {
+				a {
+					&:hover {
+						background-color: rgb(60, 46, 127);
+						color: #FFF;
+					}
+				}
+			}
+
+			&:nth-child(2) {
+				a {
+					&:hover {
+						background-color: rgb(251, 227, 26);
+						color: #FFF;
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				a {
+					&:hover {
+						background-color: rgb(0, 138, 110);
+						color: #FFF;
+					}
+				}
+			}
+
+			&:nth-child(4) {
+				a {
+					&:hover {
+						background-color: rgb(187, 31, 52);
+						color: #FFF;
+					}
+				}
+			}
+
+			&:nth-child(5) {
+				a {
+					&:hover {
+						background-color: rgb(0, 113, 181);
+						color: #FFF;
+					}
+				}
+			}
 
 			a {
 				font-size: 16px;
 				font-size: 1.6rem;
-				font-family: Oswald;
+				font-family: Ubuntu;
+				text-transform: uppercase;
 				color: #000;
-				padding-bottom: 1px;
+				padding: 7px 10px 10px;;
 
-				border-bottom: 3px solid #000;
-
-				transition: padding-bottom, 0.1s, ease-out;
+				transition: background-color, 0.1s, ease-out;
 
 				&:hover {
 					text-decoration: none;
-
-					padding-bottom: 5px;
+					background-color: rgb(60, 46, 127);
 				}
 
 				&:active {
@@ -78,10 +121,10 @@
 			padding: 0 0 3px 0;
 
 			a {
-				color: #D9D9D9;
-				font-size: 16px;
-				font-size: 1.6rem;
-				font-weight: 700;
+				color: #FFF;
+				font-size: 14px;
+				font-size: 1.4rem;
+				font-weight: 500;
 			}
 
 			.sub-menu {
@@ -92,9 +135,8 @@
 				.menu-item {
 					a {
 						font-weight: normal;
-						font-size: 14px;
-						font-size: 1.4rem;
-						font-weight: 500;
+						
+						font-weight: normal;
 					}
 				}
 			}
@@ -152,8 +194,8 @@
 				text-align: center;
 
 				a {
-					font-size: 21px;
-					font-size: 2.1rem;
+					font-size: 18px;
+					font-size: 1.8rem;
 				}
 			}
 		}

@@ -6,7 +6,9 @@
 
 @media (min-width : 800px) {
 	.page-template-info {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+		.background {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
+		}
 	
 		.site-header {
 			background-image: none;

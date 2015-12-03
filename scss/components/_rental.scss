@@ -4,9 +4,12 @@
 	}
 }
 
-@media (min-width : 800px) {
+@media (min-width : 768px) {
 	.page-template-rental {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+		.background {
+		    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+		}
+
 		.site-header {
 			background-image: none;
 		}

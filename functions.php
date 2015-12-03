@@ -22,7 +22,7 @@ function chiro_schelle_setup() {
 	 * If you're building a theme based on chiro-schelle, use a find and replace
 	 * to change 'chiro-schelle' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'chiro-schelle', get_template_directory() . '/languages' );
+	//load_theme_textdomain( 'chiro-schelle', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -72,12 +72,6 @@ function chiro_schelle_setup() {
 		'quote',
 		'link',
 	) );
-
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'chiro_schelle_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 }
 endif; // chiro_schelle_setup
 add_action( 'after_setup_theme', 'chiro_schelle_setup' );

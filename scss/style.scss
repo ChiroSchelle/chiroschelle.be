@@ -22,8 +22,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 
-$accent-color: #bb1f34;
+$accent-color: #bb1f34; // chiro rood
+$accent-color: #3C2E7F; // ribbel paars
 $dark-color: #930318;
+$dark-color: #0071B5; // Keti blauw
 
 .clearfix {
   &:after {
@@ -41,6 +43,7 @@ a, img {
 @import 'components/_main.scss';
 @import 'components/_header.scss';
 @import 'components/_nav.scss';
+@import 'components/_author.scss';
 @import 'components/_footer.scss';
 @import 'components/_leaders.scss';
 @import 'components/_article.scss';

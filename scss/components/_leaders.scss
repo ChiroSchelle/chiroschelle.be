@@ -1,5 +1,19 @@
 .page-template-leaders {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+	.site-header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+	}
+}
+
+@media (min-width : 800px) {
+	.page-template-leaders {
+		.background {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
+		}
+	
+		.site-header {
+			background-image: none;
+		}
+	}
 }
 
 .leaders {
