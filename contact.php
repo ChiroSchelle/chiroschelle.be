@@ -19,16 +19,10 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-				<?php
-
-					// NOOIT COMMENTS TOELATEN BIJ EEN GEWONE PAGINA!
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					//if ( comments_open() || get_comments_number() ) :
-					//	comments_template();
-					//endif;
-
-				?>
+			 	<?php
+                    ## Laat het contactformulier zien ##
+                    chirocontact_toon_form();
+             	?>
 
 			<?php endwhile; // End of the loop. ?>
 		</div>

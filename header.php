@@ -22,15 +22,15 @@
     <script type="text/javascript">
       	function initialize() {
         	var mapOptions = {
-          		center: { lat: 51.1107746, lng: 4.3611509},
-          		zoom: 14
+          		center: { lat: 51.124039, lng: 4.336228},
+          		zoom: 17
         	};
        	 	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
        	 	var marker = new google.maps.Marker({
-			    position: { lat: 51.1107746, lng: 4.3611509},
+			    position: { lat: 51.124039, lng: 4.336228},
 			    map: map,
-			    title: 'chiro-schelle-15'
+			    title: 'Chiro Schelle'
 			});
       	}
 

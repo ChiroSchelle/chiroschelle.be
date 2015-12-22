@@ -8,7 +8,7 @@
  * different template.
  *
  * @package chiro-schelle-15
- * Template Name: Foto-top
+ * Template Name: Fotoalbum algemeen overzicht
  */
 
 
@@ -23,7 +23,6 @@ $children_oudedoos = wp_list_pages($args);
 get_header(); ?>
 
 	<section class="container padding">
-
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="summary">	
 					<h2>Foto archief</h2>
