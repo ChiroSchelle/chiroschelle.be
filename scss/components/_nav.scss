@@ -98,15 +98,21 @@
 				}
 
 				&:active {
-					padding-bottom: 1px;
 					text-decoration: none;
 				}
 
 				&:focus {
 					text-decoration: none;
-					padding-bottom: 1px;
 				}
 			}
+		}
+	}
+}
+
+.info-menu {
+	a {
+		&:focus {
+			text-decoration: none;
 		}
 	}
 }

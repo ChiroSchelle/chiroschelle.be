@@ -320,58 +320,61 @@ body {
 }
 /* line 100, scss/components/_nav.scss */
 .main-navigation ul li a:active {
-  padding-bottom: 1px;
   text-decoration: none;
 }
-/* line 105, scss/components/_nav.scss */
+/* line 104, scss/components/_nav.scss */
 .main-navigation ul li a:focus {
   text-decoration: none;
-  padding-bottom: 1px;
 }
 
-/* line 115, scss/components/_nav.scss */
+/* line 114, scss/components/_nav.scss */
+.info-menu a:focus {
+  text-decoration: none;
+}
+
+/* line 121, scss/components/_nav.scss */
 .footer-menu .menu {
   margin: 10px 0 0 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 120, scss/components/_nav.scss */
+/* line 126, scss/components/_nav.scss */
 .footer-menu .menu .menu-item {
   padding: 0 0 3px 0;
 }
-/* line 123, scss/components/_nav.scss */
+/* line 129, scss/components/_nav.scss */
 .footer-menu .menu .menu-item a {
   color: #FFF;
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 130, scss/components/_nav.scss */
+/* line 136, scss/components/_nav.scss */
 .footer-menu .menu .menu-item .sub-menu {
   margin: 0;
   padding-left: 10px;
   list-style-type: none;
 }
-/* line 136, scss/components/_nav.scss */
+/* line 142, scss/components/_nav.scss */
 .footer-menu .menu .menu-item .sub-menu .menu-item a {
   font-weight: normal;
   font-weight: normal;
 }
 
-/* line 148, scss/components/_nav.scss */
+/* line 154, scss/components/_nav.scss */
 .info-menu .menu {
   list-style-type: none;
   margin: 15px 0;
   padding: 0;
 }
-/* line 154, scss/components/_nav.scss */
+/* line 160, scss/components/_nav.scss */
 .info-menu .menu .menu-item {
   display: block;
   width: 50%;
   float: left;
   padding-bottom: 5px;
 }
-/* line 160, scss/components/_nav.scss */
+/* line 166, scss/components/_nav.scss */
 .info-menu .menu .menu-item a {
   font-size: 1.6rem;
   font-weight: 500;
@@ -380,36 +383,36 @@ body {
   border-bottom: 2px solid #000;
   transition: padding-bottom, 0.1s, ease-out;
 }
-/* line 171, scss/components/_nav.scss */
+/* line 177, scss/components/_nav.scss */
 .info-menu .menu .menu-item a:hover {
   text-decoration: none;
   padding-bottom: 3px;
 }
 
 @media (min-width: 768px) {
-  /* line 183, scss/components/_nav.scss */
+  /* line 189, scss/components/_nav.scss */
   .main-navigation .menu-toggle {
     display: none;
   }
-  /* line 187, scss/components/_nav.scss */
+  /* line 193, scss/components/_nav.scss */
   .main-navigation ul {
     display: block;
     padding: 0 15px;
   }
-  /* line 190, scss/components/_nav.scss */
+  /* line 196, scss/components/_nav.scss */
   .main-navigation ul li {
     width: 20%;
     padding: 25px 0;
     line-height: 60px;
     text-align: center;
   }
-  /* line 196, scss/components/_nav.scss */
+  /* line 202, scss/components/_nav.scss */
   .main-navigation ul li a {
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 206, scss/components/_nav.scss */
+  /* line 212, scss/components/_nav.scss */
   .info-menu .menu .menu-item {
     width: auto;
     margin-right: 35px;

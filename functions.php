@@ -458,3 +458,15 @@ function maakeencijfer($n) {
 	}
 	return $n;
 }
+
+// Add a default avatar to Settings > Discussion
+if ( !function_exists('fb_addgravatar') ) {
+	function fb_addgravatar( $avatar_defaults ) {
+		$myavatar = 'http://media.chiroschelle.be/2015/12/28173837/avatar.png';
+		$avatar_defaults[$myavatar] = 'Chiro Schelle';
+
+		return $avatar_defaults;
+	}
+
+	add_filter( 'avatar_defaults', 'fb_addgravatar' );
+} ?>

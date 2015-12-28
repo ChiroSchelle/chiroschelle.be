@@ -19,16 +19,16 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			 	<?php
-                    ## Laat het contactformulier zien ##
-                    chirocontact_toon_form();
-             	?>
-
 			<?php endwhile; // End of the loop. ?>
 		</div>
 
 		<div id="map-canvas"></div>
-
+		
+		<?php
+	        ## Laat het contactformulier zien ##
+	        chirocontact_toon_form();
+	 	?>
+	
 	</section>
 
 <?php get_footer(); ?>
