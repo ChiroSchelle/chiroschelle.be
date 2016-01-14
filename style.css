@@ -120,6 +120,45 @@ body {
     width: 1024px;
   }
 }
+/* line 1, scss/components/_forms.scss */
+textarea {
+  padding: 8px 15px;
+  width: 100%;
+  height: 150px;
+}
+
+/* line 7, scss/components/_forms.scss */
+input[type="text"] {
+  padding: 8px 15px;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+/* line 14, scss/components/_forms.scss */
+.submit {
+  background-color: transparent;
+  border: 2px solid #008A6E;
+  color: #008A6E;
+  font-weight: 500;
+  padding: 5px 15px;
+}
+
+/* line 22, scss/components/_forms.scss */
+.niceform {
+  padding: 50px 25px;
+}
+
+/* line 26, scss/components/_forms.scss */
+.onze-gegevens {
+  padding-left: 50px;
+}
+
+/* line 30, scss/components/_forms.scss */
+.g-recaptcha {
+  padding-bottom: 20px;
+}
+
 /* line 1, scss/components/_header.scss */
 .skip-link {
   display: none;
@@ -874,45 +913,23 @@ body {
   list-style-type: none;
 }
 
-/* line 49, scss/components/_comments.scss */
-.comment-form textarea {
-  padding: 8px 15px;
-  width: 100%;
-  height: 150px;
-}
-/* line 55, scss/components/_comments.scss */
-.comment-form input[type="text"] {
-  padding: 8px 15px;
-  margin: 10px 0;
-  display: block;
-  width: 100%;
-}
-/* line 62, scss/components/_comments.scss */
-.comment-form .submit {
-  background-color: transparent;
-  border: 2px solid #008A6E;
-  color: #008A6E;
-  font-weight: 500;
-  padding: 5px 15px;
-}
-
 @media (min-width: 768px) {
-  /* line 72, scss/components/_comments.scss */
+  /* line 53, scss/components/_comments.scss */
   .comments-wrapper {
     margin-left: 31%;
     padding: 0;
   }
 
-  /* line 77, scss/components/_comments.scss */
+  /* line 58, scss/components/_comments.scss */
   .comment-list {
     width: 80%;
   }
 
-  /* line 90, scss/components/_comments.scss */
+  /* line 71, scss/components/_comments.scss */
   .comment-form textarea {
     width: 80%;
   }
-  /* line 94, scss/components/_comments.scss */
+  /* line 75, scss/components/_comments.scss */
   .comment-form input[type="text"] {
     width: 60%;
   }

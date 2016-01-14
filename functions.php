@@ -469,4 +469,11 @@ if ( !function_exists('fb_addgravatar') ) {
 	}
 
 	add_filter( 'avatar_defaults', 'fb_addgravatar' );
-} ?>
+} 
+
+add_filter( 'jetpack_open_graph_image_default', 'example_change_default_image' );
+function example_change_default_image( $image ) {
+    return 'http://chiroschelle.be/wp-content/themes/chiroschelle15/img/opengraph.jpg';
+}
+
+?>
