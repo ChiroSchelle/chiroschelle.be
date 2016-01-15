@@ -24,7 +24,7 @@
 
 	.group {
 		margin: 20px auto;
-		width: 50%;
+		width: 90%;
 
 		h3 {
 			margin: 0 0 0 20%;
@@ -104,6 +104,14 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (min-width : 1200px) {
+	.leaders {
+		.group {
+			width: 50%;
 		}
 	}
 }

@@ -16,7 +16,7 @@ function getProgramByGroup($groupId) {
 
     global $wpdb;
     $table_name = $wpdb->prefix . "programma";
-    $sql = "SELECT datum, programma FROM " . $table_name ." WHERE afdeling = %d AND datum > NOW() ORDER BY datum;";
+    $sql = "SELECT datum, programma FROM " . $table_name ." WHERE afdeling = %d AND datum >= NOW() - INTERVAL 1 DAY ORDER BY datum;";
     $query = $wpdb->prepare($sql, $groupId);
     $result = $wpdb->get_results($query);
 
@@ -73,7 +73,7 @@ get_header(); ?>
         <?php
             foreach($activities as $activity) {
                 echo '<div class="activity">';
-                    echo '<div class="date">' . date_i18n(get_option( 'date_format' ), strtotime($activity->datum)) . '</div>';
+                    echo '<div class="date">' . date_i18n('l d F', strtotime($activity->datum)) . '</div>';
                     echo '<div class="program">' . nl2br($activity->programma) . '</div>';
                 echo '</div>';
             }

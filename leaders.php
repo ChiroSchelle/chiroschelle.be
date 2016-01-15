@@ -27,18 +27,18 @@ $vb_ids = get_user_id('rank','vb');
 
 function displayUser($user_id) {
 	$l = get_userdata($user_id);
-	$author_url = get_bloginfo('url') . '/author/'. $user->user_nicename;
+	$author_url = get_bloginfo('url') . '/author/'. $l->user_nicename;
 	$edit_url = 'http://www.chiroschelle.be/wp-admin/user-edit.php?user_id=' . $user_id;
 	$contact_url = get_bloginfo('url') . '/contact/?uid=' . $user_id;
 	?>
 	<li>
 		<div class="avatar-wrapper"><?php echo get_avatar($l->ID, 180); ?></div>
 		<div class="details">
-			<p class="name"><?php echo $l->first_name . ' ' . $l->last_name; ?></p>
-			<p class="street"><?php echo $l->straat; ?></p>
+			<p class="name"><a href="<?php echo $author_url; ?>"><?php echo $l->first_name . ' ' . $l->last_name; ?></a></p>
+			<p class="street"><?php echo $l->straat . ' ' . $l->nr; ?></p>
 			<p class="city"><?php echo $l->postcode . ' ' . $l->gemeente; ?></p>
 			<p class="phone"><?php echo $l->telefoon; ?></p>
-			<p class="mail"></p>
+			<p class="mail"><a href="<?php echo $contact_url; ?>">Contacteer <?php echo $l->first_name; ?></a></p>
 		</div>
 	</li>
 <?php }

@@ -627,7 +627,7 @@ input[type="text"] {
 /* line 25, scss/components/_leaders.scss */
 .leaders .group {
   margin: 20px auto;
-  width: 50%;
+  width: 90%;
 }
 /* line 29, scss/components/_leaders.scss */
 .leaders .group h3 {
@@ -695,6 +695,12 @@ input[type="text"] {
   margin: 0;
 }
 
+@media (min-width: 1200px) {
+  /* line 113, scss/components/_leaders.scss */
+  .leaders .group {
+    width: 50%;
+  }
+}
 /* line 1, scss/components/_article.scss */
 .post {
   padding: 25px 0 0 0;
