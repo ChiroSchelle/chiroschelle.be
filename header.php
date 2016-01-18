@@ -14,6 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|Ubuntu:400,500,700,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" media="screen" />
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/bower_components/jquery/dist/jquery.min.js"></script>
 
