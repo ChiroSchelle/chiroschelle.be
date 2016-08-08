@@ -11,47 +11,46 @@ $authorDetails = get_userdata($author);
 
 get_header(); ?>
 
-	<?php if ( have_posts() ) : ?>
-		<section class="highlighted">
-			<div class="container padding">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="profile">
-
-							<div class="avatar-wrapper">
-								<?php echo get_avatar($post->post_author, 160); ?>
-							</div>
-
-							<div class="info-wrapper">
-								<h2><?php echo $authorDetails->display_name; ?></h2>
-								<div class="street">
-									<?php echo $authorDetails->straat . " ". $authorDetails->nr; ?>
-								</div>
-								<div class="city">
-									<?php echo $authorDetails->postcode . " ". $authorDetails->gemeente; ?>
-								</div>
-								<div class="phone">
-									<?php echo $authorDetails->telefoon; ?>
-								</div>
-								<div class="contact">
-									<a href="<?php echo get_bloginfo('url') . '/contact/?uid=' . $authorDetails->ID; ?>">
-							        	Contacteer <?php echo $authorDetails->first_name; ?>
-							        </a>
-								</div>
-							</div>
-
+	<section class="highlighted">
+		<div class="container padding">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="profile">
+						<div class="avatar-wrapper">
+							<?php echo get_avatar($authorDetails->ID, 180); ?>
 						</div>
-					</div>
-					<div class="col-md-7 col-md-offset-1 vragenlijst-wrapper">
 
-							<?php get_vragenlijst($authorDetails); ?>
+						<div class="info-wrapper">
+							<h2><?php echo $authorDetails->display_name; ?></h2>
+							<div class="street">
+								<?php echo $authorDetails->straat . " ". $authorDetails->nr; ?>
+							</div>
+							<div class="city">
+								<?php echo $authorDetails->postcode . " ". $authorDetails->gemeente; ?>
+							</div>
+							<div class="phone">
+								<?php echo $authorDetails->telefoon; ?>
+							</div>
+							<div class="contact">
+								<a href="<?php echo get_bloginfo('url') . '/contact/?uid=' . $authorDetails->ID; ?>">
+						        	Contacteer <?php echo $authorDetails->first_name; ?>
+						        </a>
+							</div>
+						</div>
 
 					</div>
 				</div>
+				<div class="col-md-7 col-md-offset-1 vragenlijst-wrapper">
+
+						<?php get_vragenlijst($authorDetails); ?>
+
+				</div>
 			</div>
+		</div>
 
-		</section>
+	</section>
 
+	<?php if ( have_posts() ) : ?>
 		<section class="container">
 			<div class="row">
 				<div class="col-md-10">
@@ -78,7 +77,7 @@ get_header(); ?>
 		</section>
 	<?php else : ?>
 
-		<?php get_template_part( 'template-parts/content', 'none' ); ?>
+		<?php //get_template_part( 'template-parts/content', 'none' ); ?>
 
 	<?php endif; ?>
 

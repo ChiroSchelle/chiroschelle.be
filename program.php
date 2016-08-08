@@ -16,7 +16,7 @@ function getProgramByGroup($groupId) {
 
     global $wpdb;
     $table_name = $wpdb->prefix . "programma";
-    $sql = "SELECT datum, programma FROM " . $table_name ." WHERE afdeling = %d AND datum >= NOW() - INTERVAL 1 DAY ORDER BY datum;";
+    $sql = "SELECT datum, programma FROM " . $table_name ." WHERE (afdeling = %d OR afdeling = 17) AND datum >= NOW() - INTERVAL 1 DAY ORDER BY datum;";
     $query = $wpdb->prepare($sql, $groupId);
     $result = $wpdb->get_results($query);
 
@@ -57,12 +57,6 @@ get_header(); ?>
                 </div>
 
             </div>
-
-            <!-- <div class="col-md-6">
-                <div id="kalender" class="noprint">
-                    <?php /*if ($_GET['toon']== 'datum'){*/include_once( TEMPLATEPATH . '/template-parts/calendar.php');/*}*/ ?>
-                </div>
-            </div> -->
 
         </div>
 
