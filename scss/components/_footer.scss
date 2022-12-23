@@ -1,5 +1,5 @@
 .site-footer {
-	margin: 0;
+	margin: 45px 0 0 0;
 	padding: 35px 0;
 
 	width: 100%;
@@ -9,20 +9,27 @@
 	background-image: url('img/afdelingskleuren.png');
 	background-repeat: repeat-x;
 
-	img {
-		max-width: 100%;
-	}
-
 	h3 {
 		margin: 5px 0 10px 0;
 		color: #FFF;
-		text-transform: uppercase;
-		font-size: 18px;
-		font-size: 1.8rem;
+
+		.border {
+			border-bottom: 3px solid #FFF;
+			line-height: 35px;
+		}
 	}
 
 	.footer-logo {
 		height: 400px;
+	}
+
+	.column {
+		float: left;
+		margin-right: 50px;
+
+		&.image {
+			margin-right: 20px;
+		}
 	}
 
 	.contact-wrapper {
@@ -80,7 +87,6 @@
 	}
 
 	.news-letter {
-		padding-bottom: 15px;
 		.mailchimp {
 			input[type="email"] {
 				padding: 8px 15px;
@@ -96,11 +102,5 @@
 			}
 
 		}
-	}
-}
-
-@media (min-width : 768px) {
-	.site-footer {
-		margin: 45px 0 0 0;
 	}
 }

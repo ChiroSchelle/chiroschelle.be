@@ -1,14 +1,14 @@
 .comments-wrapper {
-	padding: 15px;
+	margin-left: 31%;
 }
 
 .comment-list {
 	list-style-type: none;
 	padding: 0;
-	width: 100%;
+	width: 80%;
 
 	.comment {
-		margin: 10px 0;
+		margin: 10px;
 		padding: 25px;
 
 		background-color: #F0F0F0;
@@ -18,14 +18,17 @@
 			@extend .clearfix;
 
 			.avatar {
-				// display: none;
 				padding-right: 0;
 				img {
 					border-radius: 50%;
-					max-width: 100%;
+					max-width: 50px;
 					height: auto;
 					float: right;
 				}
+			}
+
+			.content {
+
 			}
 		}
 
@@ -46,34 +49,23 @@
 }
 
 .comment-form {
-	
-}
-
-@media (min-width: 768px) {
-	.comments-wrapper {
-		margin-left: 31%;
-		padding: 0;
-	}
-
-	.comment-list {
+	textarea {
+		padding: 8px 15px;
 		width: 80%;
-
-		// .comment {
-		// 	.comment-body {
-		// 		.avatar {
-		// 			display: block;
-		// 		}
-		// 	}
-		// }
+		height: 150px;
 	}
 
-	.comment-form {
-		textarea {
-			width: 80%;
-		}
+	input[type="text"] {
+		padding: 8px 15px;
+		margin: 10px 0;
+		display: block;
+	}
 
-		input[type="text"] {
-			width: 60%;
-		}
+	.submit {
+		background-color: transparent;
+		border: 2px solid #008A6E;
+		color: #008A6E;
+		font-weight: 500;
+		padding: 5px 15px;
 	}
 }

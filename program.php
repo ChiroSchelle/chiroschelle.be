@@ -53,7 +53,7 @@ get_header(); ?>
                     <a href="?id=8">Tippers</a> ||
                     <a href="?id=10">Tiptiens</a> ||
                     <a href="?id=12">Aspi &#9792;</a> ||
-                    <a href="?id=17">Activiteiten</a>
+                    <!--<a href="?id=17">Activiteiten</a>-->
                 </div>
 
             </div>
@@ -65,6 +65,55 @@ get_header(); ?>
     <section class="container">
 
         <?php
+            $id = $_GET['id'];
+            $afdeling = "";
+            
+            switch ($id) {
+                case 1:
+                    $afdeling = "Ribbel Jongens";
+                    break;
+                case 2:
+                    $afdeling = "Ribbel Meisjes";
+                    break;
+                case 3:
+                    $afdeling = "Speelclub Jongens";
+                    break;
+                case 4:
+                    $afdeling = "Speelclub Meisjes";
+                    break;
+                case 5:
+                    $afdeling = "Rakkers";
+                    break;
+                case 6:
+                    $afdeling = "Kwiks";
+                    break;
+                case 7:
+                    $afdeling = "Toppers";
+                    break;
+                case 8:
+                    $afdeling = "Tippers";
+                    break;
+                case 9:
+                    $afdeling = "Kerels";
+                    break;
+                case 10:
+                    $afdeling = "Tiptiens";
+                    break;
+                case 11:
+                    $afdeling = "Aspi Jongens";
+                    break;
+                case 12:
+                    $afdeling = "Aspi Meisjes";
+                    break;
+                default:
+                    break;
+            }
+            echo '<section class="padding">';
+            echo '<section class="padding">';
+            echo '<h3>' . $afdeling . '</h3>';
+            echo '</section>';
+            echo '</section>';
+            
             foreach($activities as $activity) {
                 echo '<div class="activity">';
                     echo '<div class="date">' . date_i18n('l d F', strtotime($activity->datum)) . '</div>';
