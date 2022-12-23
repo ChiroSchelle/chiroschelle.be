@@ -3,7 +3,7 @@
 
 	@extend .clearfix;
 
-	h1, h2 {
+	h1 {
 		font-size: 2.6rem;
 	}
 
@@ -42,14 +42,6 @@
     h1 {
 		font-size: 3.1rem;
 	}
-
-	article {
-		margin: 45px 0;
-	}
-
-	.post {
-		padding: 0;
-	}
 }
 
 .pagination {
@@ -65,7 +57,7 @@
     }
 }
 
-@media (min-width : 768px) {
+@media (min-width : 800px) {
 
 	.highlighted {
 		.post {
@@ -100,15 +92,13 @@
 			min-height: 1px;
 			float: left;
 			text-align: right;
-			
 
 			img {
 				margin: 0 auto;
-				//width: auto;
 				max-width: 100%;
-				//display: block;
 				border: 2px #4A4A4A solid;
 				background-color: #FFF;
+
 
 				&.placeholder {
 					min-width: 100%;

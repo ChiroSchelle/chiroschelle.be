@@ -1,19 +1,5 @@
 .page-template-leaders {
-	.site-header {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
-	}
-}
-
-@media (min-width : 800px) {
-	.page-template-leaders {
-		.background {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
-		}
-	
-		.site-header {
-			background-image: none;
-		}
-	}
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/leaders-bg.jpg");
 }
 
 .leaders {
@@ -24,7 +10,7 @@
 
 	.group {
 		margin: 20px auto;
-		width: 90%;
+		width: 50%;
 
 		h3 {
 			margin: 0 0 0 20%;
@@ -104,14 +90,6 @@
 					}
 				}
 			}
-		}
-	}
-}
-
-@media (min-width : 1200px) {
-	.leaders {
-		.group {
-			width: 50%;
 		}
 	}
 }

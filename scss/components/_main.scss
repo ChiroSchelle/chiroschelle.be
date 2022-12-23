@@ -5,8 +5,7 @@ html {
 body {
 	font-family: Roboto;
 
-	//background-image: url("img/header2.jpg");
-	//background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -19,8 +18,9 @@ body {
 }
 
 .main-container {
-	margin: 0 auto;
-	padding: 0 0 30px;
+	//margin: -100px 2% 25px;
+	margin: -25px 2% 25px;
+	padding: 0;
 }
 
 .card {
@@ -29,7 +29,15 @@ body {
 }
 
 .padding {
-	padding: 15px;
+	padding: 15px 50px;
+}
+
+.type-page {
+	padding: 0 25px;
+}
+
+.page-template-info {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/info-bg.jpg");
 }
 
 .blog .post .entry-content {
@@ -38,33 +46,9 @@ body {
 	}
 }
 
-@media (min-width: 768px) {
-	.padding {
-		padding: 15px 50px;
-	}
-
-	.background {
-		height:100%;
-		width:100%;
-		position:fixed;
-		background-image: url("img/header2.jpg");
-		background-position: center;
-		background-size: cover;
-		z-index: -1;
-	}
-
-	.type-page {
-		padding: 0 25px;
-	}
-
+@media (min-width : 800px) {
 	.main-container {
-		//margin: -250px auto 75px;
+		margin: -250px auto 75px;
 		padding: 0 0 50px 0;
-	}
-}
-
-@media (min-width: 1200px) {
-	.container {
-	    width: 1024px;
 	}
 }
